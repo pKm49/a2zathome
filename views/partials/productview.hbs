@@ -1,0 +1,39 @@
+
+                <figure class="card card-product">
+                    <div class="img-wrap">
+                          <a href="/product/getproduct/{{this._id}}"> <img class="img-responsive thumpnail" src={{this.imageone}}></a>
+                    </div>
+                    <figcaption class="info-wrap">
+                        <a href="/product/getproduct/{{this._id}}" class="title"><h4> {{this.title}}</h4></a>
+                        <div class="rating-wrap">
+					<ul class="rating-stars">
+						<li style="width:80%" class="stars-active">
+							{{#for this.rating}}
+							<span> <i class="fa fa-star"></i></span>
+							{{/for}}
+						</li>
+						<li>
+							{{#for this.rating}}
+							<span> <i class="fa fa-star"></i></span>
+							{{/for}}
+						</li>
+					</ul>
+					<div class="label-rating">({{this.ratecount}} ratings)</div>
+				</div>
+                        <div class="action-wrap">
+
+                            <div class="price-wrap  h6">
+                                <span class="price-new">₹{{math this.oldPrice.[0] "-" (round (math ( math this.oldPrice.[0] "*" this.newPrice ) "/" 100))}}</span>
+                                <del class="price-old">₹{{this.oldPrice.[0]}}</del>
+                                <span class="price-per">{{this.newPrice}}% off</span>
+                            </div>
+                            <div class="price-wrap a2zprice  h6">
+                                <span class="price-new a2z">A2Z price :</span>
+                                <span class="price-new">₹{{math this.oldPrice.[0] "-" (round (math ( math this.oldPrice.[0] "*" this.a2zPrice ) "/" 100))}}</span>
+                                <span class="price-pera2z">{{this.a2zPrice}}% off</span>
+                            </div>
+                            <a href="#" class="btn btn-success btn-sm "> Add to Cart </a><!-- price-wrap.// -->
+                        </div> <!-- action-wrap -->
+                    </figcaption>
+                </figure> <!-- card // -->
+   

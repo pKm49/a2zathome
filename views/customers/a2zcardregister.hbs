@@ -1,0 +1,210 @@
+<link rel='stylesheet' href='/stylesheets/admin.css' />
+
+<body class="bg-dark">
+    <div class="container">
+        <div class="card card-register mx-auto mt-5">
+            <div class="card-header">
+                <div class="loginhead float-left">Register</div>
+            </div>
+            
+            <div class="card-body">
+                <article class="card-body">
+                <h3 class="card-title text-center mt-1">A2Z Privilege Card</h3>
+                <hr>
+                {{#if hasErrors}}
+                <div class="alert alert-danger">
+                    {{#each messages}}
+                    <p>{{this}}</p>
+                    {{/each}}
+                </div>
+                {{/if}}
+                <form action="/master/dashboard/shops/newshop" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="input-group required">
+                                    <input name="name"  class="form-control" placeholder="Name" type="name" required="required">
+
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group required">
+                                    <input name="fatherhusband" class="form-control" placeholder="Father's/Husband's Name" type="name"
+                                        required="required" >
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input name="proffession" class="form-control" placeholder="Proffession" type="name" required="required">
+                        </div><!-- input-group.// -->
+                    </div>
+                    <h5>Permanent Address </h5>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input name="house" class="form-control" placeholder="House" type="name" required="required">
+                        </div>
+                        <div class="input-group-append">
+                                        *
+                                    </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-4">
+                                <div class="input-group">
+
+                                    <input name="post" class="form-control" placeholder="City" type="name" required="required">
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+
+                                    <input name="district" class="form-control" placeholder="District" type="name"
+                                        required="required">
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+
+                                    <input name="state" class="form-control" placeholder="State" type="name" required="required">
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <input name="dob" class="form-control" placeholder="Date Of Birth" type="date"
+                                        required="required">
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+
+                                    <input name="age" class="form-control" placeholder="Age" type="number"
+                                        required="required">
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input name="mobile" class="form-control" placeholder="Mobile" type="tel" required="required">
+                         <div class="input-group-append">
+                                        *
+                                    </div>
+                        </div>
+                       
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="input-group">
+
+                                    <input name="nominee" class="form-control" placeholder="Name of Nominee" type="name"
+                                        required="required">
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+
+                                    <input name="relationship" class="form-control" placeholder="Relationship With Nominee" type="name"
+                                        required="required">
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">   
+                            A2Z Priviege Card Type
+                            <select name="cardtype">
+                                <option value="true">Silver</option>
+                                <option value="false">Gold</option>
+                                <option value="true">Platinum</option>
+                                <option value="false">Diamond</option>
+                            </select>
+                            <div class="input-group-append">
+                                *
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input name="policycode" class="form-control" placeholder="Policy Code" type="name" required="required">
+                         <div class="input-group-append">
+                                        *
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <h5>Valid From</h5>
+                                <div class="input-group">
+                                    <input name="validfrom" class="form-control" placeholder="Date Of Birth" type="date"
+                                        required="required">
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Valid To</h5>
+                                <div class="input-group">
+                                    <input name="validto" class="form-control" placeholder="Date Of Birth" type="date"
+                                        required="required">
+                                    <div class="input-group-append">
+                                        *
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input name="date" class="form-control" placeholder="Joining Date" type="date" required="required">
+                        </div><!-- input-group.// -->
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="hidden" name="_csrf" value="{{csrfTokken}}">
+                        </div>
+                    </div> <!-- form-group// -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block"> Create </button>
+                    </div> <!-- form-group// -->
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

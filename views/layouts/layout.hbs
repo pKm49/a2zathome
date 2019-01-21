@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="/stylesheets/ui.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)"> 
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  
+</head>
+
+<body>
+  {{{body}}}
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script>
+		$(document).ready(function () {
+			$('#sub1').click(function () {
+				console.log('success');
+				$('#main').attr('src', '{{product.[0].imageone}}');
+			});
+			$('#sub2').click(function () {
+				$('#main').attr('src', '{{product.[0].imagetwo}}');
+			});
+
+			$('#sub3').click(function () {
+				$('#main').attr('src', '{{product.[0].imagethree}}');
+			});
+		});
+	</script>
+</body>
+
+</html>

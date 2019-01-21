@@ -1,0 +1,56 @@
+<div class="topbar">
+	{{> header}}
+	{{> category}}
+</div>
+<div class="card">
+
+
+<ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">{{products.[0].maincategory}}</a>
+            </li>
+            <li class="breadcrumb-item active">{{products.[0].subCategory}}</li>
+        </ol>
+</div>
+
+<div class="card">
+<div class="section-content container">
+        <div class="row">
+
+            
+            {{#each products}}
+            
+                <div class="col-md-3">
+                <figure class="card card-product">
+                    <div class="img-wrap">
+                          <a href="/product/getproduct/{{this._id}}"> <img class="img-responsive thumpnail" src={{this.imageone}}></a>
+                    </div>
+                    <figcaption class="info-wrap">
+                        <a href="/product/getproduct/{{this._id}}" class="title">{{this.title}}</a>
+                        <div class="action-wrap">
+
+                            <div class="price-wrap  h6">
+                                <span class="price-new">₹{{math this.oldPrice.[1] "-" (round (math ( math this.oldPrice.[1] "*" this.newPrice ) "/" 100))}}</span>
+                                <del class="price-old">₹{{this.oldPrice.[1]}}</del>
+                                <span class="price-per">{{this.newPrice}}% off</span>
+                            </div>
+                            <div class="price-wrap a2zprice  h6">
+                                <span class="price-new a2z">A2Z price :</span>
+                                <span class="price-old">₹{{math this.oldPrice.[1] "-" (round (math ( math this.oldPrice.[1] "*" this.a2zPrice ) "/" 100))}}</span>
+                                <span class="price-pera2z">{{this.a2zPrice}}% off</span>
+                            </div>
+                            <a href="#" class="btn btn-success btn-sm "> Add to Cart </a><!-- price-wrap.// -->
+                        </div> <!-- action-wrap -->
+                    </figcaption>
+                </figure> <!-- card // -->
+            </div>
+            {{else}}
+            
+                    <h2 style="margin:0 auto; padding:20px;height:40vh;">No results found</h2>
+
+            {{/each}}
+        </div>
+    </div>
+
+</div>
+{{> footer}}

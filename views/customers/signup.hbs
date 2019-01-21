@@ -1,0 +1,48 @@
+<link rel='stylesheet' href='/stylesheets/admin.css' />
+
+<body class="bg-dark">
+    <div class="container">
+        <div class="card card-register mx-auto mt-5">
+            <div class="card-header">
+                <div class="loginhead float-left">Register</div>
+            </div>
+            
+            <div class="card-body">
+                {{#if hasErrors}}
+                <div class="alert alert-danger">
+                    {{#each messages}}
+                        <p>{{this}}</p>
+                    {{/each}}
+                </div>
+            {{/if}}
+                <form action="/customer/signup" method="POST">
+                
+                    <div class="form-group">
+                        <div class="form-label-group">
+                            <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email address"
+                                required="required">
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-label-group">
+                             <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password"
+                                        required="required">
+
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <div class="form-label-group">
+                            <input type="hidden" name="_csrf" value="{{csrfTokken}}">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </form>
+                <div class="text-center">
+                    <a class="d-block small mt-3" href="/customer/signin">Login Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

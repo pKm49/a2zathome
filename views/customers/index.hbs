@@ -1,0 +1,750 @@
+<div class="topbar">
+    {{> header}}
+    {{> category}}
+</div>
+
+{{> slider1}}
+{{> previlagecard}}
+
+<section class="mx-3">
+    <div class="row my-3">
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Mobiles
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.mobiles}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Laptops
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.laptops}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col-6">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Tablets
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.tablets}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Electronics
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.electronics}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Desktop PCs
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.pcs}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+         <div class="col">
+            <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Men's
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.maccessories}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Computer Accessories
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.caccessories}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Electronics
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.eothers}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> slider2}}
+
+<section class="mx-3">
+    <div class="row my-3">
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Men's Fashion
+                    </h3>
+                </div>
+                <div class="row">
+                   {{#each products.mclothing}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Women's Fashion
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.wclothing}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Kid's Fashion
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.babyclothing}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Men's Footwear
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.mfootwear}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Women's Footwear
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.wfootwear}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> slider3}}
+
+<section class="mx-3">
+    <div class="row my-3">
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Kid's Footwears
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.babyfootwear}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                       Best at Baby and Kids
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.babynkids}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Women's
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.waccessories}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Watches for Women
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.wwatches}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best at Men's
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.mens}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="row my-3">
+        <div class="col">
+             <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Men's
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.maccessories}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Watches for Men
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.mwatches}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best at Women's
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.womens}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="row my-3">
+        <div class="col">
+             <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Baby Care Items
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.babycares}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Toys
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.toys}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+             <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Personal Care for Women
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.wpcare}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Personal Care for Men
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.mpcare}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+{{> slider4}}
+
+<section class="mx-3">
+    <div class="row my-3">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best TVs
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.tvs}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Refrigerators
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.refrigerators}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Washing Machines
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.wmachines}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Air Conditioners
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.acs}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Furnitures
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.furnitures}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Lightning Materials
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.lightnings}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="section-header">
+                    <h3>
+                        Best Appliances
+                    </h3>
+                </div>
+                <div class="row">
+                    {{#each products.appliances}}
+                        <div class="col-6">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Kitchen Items
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.kitchen}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Dining
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.dining}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Home Decors
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.homedecors}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Home Appliances
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.homeappliances}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Sorts Items
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.sports}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Games
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.games}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best School Supplies
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.ssupplies}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="section-header">
+                        <h3>
+                            Best Books
+                        </h3>
+                    </div>
+                    <div class="col-12">
+                        {{#each products.books}}
+                        <div class="col-12">
+                            {{> productview}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+{{> footer}}
